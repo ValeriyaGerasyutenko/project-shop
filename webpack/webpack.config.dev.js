@@ -7,7 +7,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   output: {
-    chunkFilename: 'js/[name].chunk.js'
+    chunkFilename: 'scripts/[name].chunk.js'
   },
   devServer: {
     inline: true,
@@ -22,7 +22,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.js$/,
-        include: Path.resolve(__dirname, '../src'),
+        include: Path.resolve(__dirname, '../'),
         enforce: 'pre',
         loader: 'eslint-loader',
         options: {
@@ -31,11 +31,12 @@ module.exports = merge(common, {
       },
       {
         test: /\.js$/,
-        include: Path.resolve(__dirname, '../src'),
+        include: Path.resolve(__dirname, '../'),
         loader: 'babel-loader'
       },
       {
         test: /\.s?css$/i,
+        include: Path.resolve(__dirname, '../'),
         use: ['style-loader', 'css-loader?sourceMap=true', 'sass-loader']
       }
     ]
