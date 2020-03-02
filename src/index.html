@@ -145,6 +145,117 @@
         </div>
       </section>
 
+      <!-- Заголовок страницы -->
+      <div class="page-header__title-wrapper page-header__title-wrapper--catalog">
+        <h1 class="page-header__title">Каталог товаров</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Каталог сайта -->
+      <section class="catalog">
+        <div class="container">
+          <ul class="catalog__list">
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="src/img/photo-hare-desktop@1x.webp 1x, src/img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="src/img/photo-hare-tablet@1x.webp 1x, src/img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="src/img/photo-hare-mobile@1x.webp 1x, src/img/photo-hare-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="src/img/photo-hare-desktop@1x.jpg 1x, src/img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="src/img/photo-hare-tablet@1x.jpg 1x, src/img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="src/img/photo-hare-mobile@1x.jpg" srcset="src/img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+                </picture>
+              </a>
+
+              <div class="catalog-item__info">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Зайчик-попрыгайчик
+                  </a>
+                </h3>
+
+                <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+
+                <footer class="catalog-item__footer">
+                  <span class="catalog-item__price">1 200 руб.</span>
+                  <a class="catalog-item__cart-link js-modal" href="#">
+                    <svg class="catalog-item__icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </li>
+
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="src/img/photo-bowl-desktop@1x.webp 1x, src/img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="src/img/photo-bowl-tablet@1x.webp 1x, src/img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="src/img/photo-bowl-mobile@1x.webp 1x, src/img/photo-bowl-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="src/img/photo-bowl-desktop@1x.jpg 1x, src/img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="src/img/photo-bowl-tablet@1x.jpg 1x, src/img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="src/img/photo-bowl-mobile@1x.jpg" srcset="src/img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                </picture>
+              </a>
+
+              <div class="catalog-item__info">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Корзинка для белья
+                  </a>
+                </h3>
+
+                <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+
+                <footer class="catalog-item__footer">
+                  <span class="catalog-item__price">690 руб.</span>
+                  <a class="catalog-item__cart-link js-modal" href="#">
+                    <svg class="catalog-item__icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </li>
+
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link catalog-item__link--image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="src/img/photo-toys-desktop@1x.webp 1x, src/img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="src/img/photo-toys-tablet@1x.webp 1x, src/img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="src/img/photo-toys-mobile@1x.webp 1x, src/img/photo-toys-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="src/img/photo-toys-desktop@1x.jpg 1x, src/img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="src/img/photo-toys-tablet@1x.jpg 1x, src/img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="src/img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+                </picture>
+              </a>
+              <div class="catalog-item__info">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Большая корзинка для&nbsp;игрушек
+                  </a>
+                </h3>
+
+                <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+
+                <footer class="catalog-item__footer">
+                  <span class="catalog-item__price">1 500 руб.</span>
+                  <a class="catalog-item__cart-link js-modal" href="#">
+                    <svg class="catalog-item__icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
+                </footer>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
       <!-- О нас -->
       <section class="features">
         <div class="container">
