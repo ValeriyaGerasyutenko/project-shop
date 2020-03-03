@@ -30,10 +30,10 @@ form.forEach(function(item){
 
 			if(this.value.match(/\w{3,}/g)){
 				console.log('+')
-				this.parentElement.classList.remove('red');
-				this.parentElement.classList.add('green')
+				this.classList.remove('red');
+				this.classList.add('green')
 			} else {
-				this.parentElement.classList.add('red')
+				this.classList.add('red')
 			}
 
 
