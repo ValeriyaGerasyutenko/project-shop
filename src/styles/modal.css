@@ -1,0 +1,36 @@
+.modal {
+	position: absolute;
+	top: 0;
+	width: 100% ;
+	background: #fff;
+	/*min-height:  100vh;*/
+ 	z-index: 999;
+ 	opacity: 0;
+ 	pointer-events: none;
+ 	z-index: -1;
+ 	transition: 0.3s ease-in-out all;
+
+}
+
+
+.activeModal .modal{
+	opacity: 1;
+	pointer-events:  auto;
+	z-index: 999;
+}
+
+.modal-container {
+	max-width: 900px;
+	border: 3px solid #000;
+	margin: 50px  auto ;
+	padding: 20px;
+}
+
+
+.red {
+	border: 1px solid red;
+}
+
+.green {
+	border: 1px solid green;
+}

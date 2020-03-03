@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
   <link  rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/modal.css ">
 </head>
  <body class="page">
     <!-- Шапка сайта и раздел навигации -->
@@ -367,7 +368,7 @@
             </picture>
           </div>
         </div>
-        <button class="contacts__button button" type="button">Напишите нам</button>
+        <button class="contacts__button button popupInit" type="button">Напишите нам</button>
       </section>
     </main>
 
@@ -472,10 +473,202 @@
         </form>
       </div>
     </section>
+    <div class="modal">
+      <div class="modal-container">
+           <div class="close-icon">  </div>
+           <div class="modal-body"> 
+              <div class="container">
+                <p class="knitting__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+                  заказа
+                  и мы свяжемся с вами, чтобы уточнить детали.</p>
+              </div>
+
+              <!-- Форма -->
+              <form class="knitting__form form" action="" method="GET">
+                <!-- Блок выбора типа изделия -->
+                <div class="container">
+                  <fieldset class="form-group form-group--type">
+                    <legend class="form-group__title form-group__title--type">Тип</legend>
+
+                    <!-- Первый радио-инпут -->
+                    <ul class="form__list" role="presentation">
+                      <li class="form__item">
+                        <input class="form-group__input form-group__input--radio" type="radio" name="type" value="accessory" id="type1" checked>
+
+                        <label class="form-group__label form-group__label--radio" for="type1">
+                          Аксессуар для интерьера
+                        </label>
+                      </li>
+
+                      <!-- Второй радио-инпут -->
+                      <li class="form__item">
+                        <input class="form-group__input form-group__input--radio" type="radio" name="type" value="toy" id="type2">
+
+                        <label class="form-group__label form-group__label--radio" for="type2">
+                          Детская игрушка
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+
+                <div class="form__group-wrapper">
+                  <div class="container">
+                    <!-- Блок выбора цвета -->
+                    <fieldset class="form-group form-group--grey">
+                      <legend class="form-group__title">Цвет</legend>
+
+                      <ul class="form__list form__list--has-wrapper" role="presentation">
+                        <!-- Первый чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="white" id="white" checked>
+
+                          <label class="form-group__label form-group__label--checkbox" for="white">
+                            Белый
+                          </label>
+                        </li>
+
+                        <!-- Второй чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="grey" id="grey" checked>
+
+                          <label class="form-group__label form-group__label--checkbox" for="grey">
+                            Серый
+                          </label>
+                        </li>
+
+                        <!-- Третий чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="tiffany" id="tiffany">
+
+                          <label class="form-group__label form-group__label--checkbox" for="tiffany">
+                            «Тиффани»
+                          </label>
+                        </li>
+
+                        <!-- Четвертый чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="black" id="black">
+
+                          <label class="form-group__label form-group__label--checkbox" for="black">
+                            Черный
+                          </label>
+                        </li>
+
+                        <!-- Пятый чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="pink" id="pink">
+
+                          <label class="form-group__label form-group__label--checkbox" for="pink">
+                            Розовый
+                          </label>
+                        </li>
+
+                        <!-- Шестой чекбокс -->
+                        <li class="form__item form__item--checkbox">
+                          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="color" value="orange" id="orange">
+
+                          <label class="form-group__label form-group__label--checkbox" for="orange">
+                            Оранжевый
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <!-- Блок ФИО -->
+                  <fieldset class="form-group form-group--about">
+                    <legend class="form-group__title form-group__title--about">ФИО</legend>
+
+                    <ul class="form__list form__list--about">
+                      <li class="form__item form__item--about">
+                        <label class="form-group__label" for="name">
+                          Имя:
+                        </label>
+
+                        <input class="form-group__input form-group__input--about validName" type="text" name="user-name" placeholder="Введите ваше имя*" id="name" >
+                      </li>
+
+                      <li class="form__item form__item--about">
+                        <label class="form-group__label" for="surname">
+                          Фамилия:
+                        </label>
+
+                        <input class="form-group__input form-group__input--about" type="text" name="user-surname" placeholder="Укажите фамилию*" id="surname" >
+                      </li>
+
+                      <li class="form__item form__item--about">
+                        <label class="form-group__label" for="patronymic">
+                          Отчество:
+                        </label>
+
+                        <input class="form-group__input form-group__input--about" type="text" name="user-patronymic" placeholder="Отчество, если желаете" id="patronymic">
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+
+                <div class="form__group-wrapper">
+                  <div class="container">
+                    <!-- Блок телефон -->
+                    <div class="form-group form-group--contacts">
+                      <label class="form-group__title form-group__title--contacts" for="number">
+                        Тел
+                      </label>
+
+                      <input class="form-group__input form-group__input--contacts" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"  id="number">
+
+                      <svg class="form-group__icon" width="25" height="24">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+
+                    <!-- Блок почты -->
+                    <div class="form-group form-group--contacts">
+                      <label class="form-group__title form-group__title--email" for="mail">
+                        E-mail
+                      </label>
+
+                      <input class="form-group__input form-group__input--contacts" type="email" name="user-mail" placeholder="Ваш Email*"  id="mail">
+
+                      <svg class="form-group__icon form-group__icon--mail" width="32" height="32">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <!-- Блок дополнительной информации -->
+                  <div class="form-group form-group--more">
+                    <label class="form-group__title" for="more">
+                      Доп
+                    </label>
+
+                    <textarea class="form-group__textarea" name="more" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу" id="more"></textarea>
+                  </div>
+
+                  <div class="form__footer">
+                    <span class="form__mark">*Поля обязательны для заполнения</span>
+
+                    <button class="form__submit button">Отправить заказ</button>
+                  </div>
+                </div>
+              </form>
+           </div> 
+
+      </div>
+
+
+
+    </div>
     <script src="src/scripts/index.js"></script>
     <script src="src/scripts/svg4everybody.js"></script>
     <script>svg4everybody();</script>
+    <script src="src/scripts/form.js">  </script>
     <script src="src/scripts/picturefill.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARft6AghVdjmIMiV2mh-smHVqdS1drIXU&callback=initMap" async defer></script>
+<!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARft6AghVdjmIMiV2mh-smHVqdS1drIXU&callback=initMap" async defer></script> -->
 </body>
 </html>
