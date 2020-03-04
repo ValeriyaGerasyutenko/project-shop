@@ -152,7 +152,7 @@
       </div>
     </header>
 
-    <main>
+    </main>
       <!-- Каталог сайта -->
       <section class="catalog">
         <div class="container">
@@ -329,7 +329,7 @@
             </button>
           </div>
 
-          <button class="reviews__write button" type="button">Написать</button>
+          <button class="reviews__write button popupInit" type="button">Написать</button>
         </div>
       </section>
 
@@ -475,7 +475,11 @@
     </section>
     <div class="modal">
       <div class="modal-container">
-           <div class="close-icon">  </div>
+           <div class="close-icon"> 
+            <img src="src/img/close-icon.png" alt="">
+
+            </div>
+
            <div class="modal-body"> 
               <div class="container">
                 <p class="knitting__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
@@ -596,7 +600,7 @@
                           Фамилия:
                         </label>
 
-                        <input class="form-group__input form-group__input--about" type="text" name="user-surname" placeholder="Укажите фамилию*" id="surname" >
+                        <input class="form-group__input form-group__input--about validName" type="text" name="user-surname" placeholder="Укажите фамилию*" id="surname" >
                       </li>
 
                       <li class="form__item form__item--about">
@@ -604,7 +608,7 @@
                           Отчество:
                         </label>
 
-                        <input class="form-group__input form-group__input--about" type="text" name="user-patronymic" placeholder="Отчество, если желаете" id="patronymic">
+                        <input class="form-group__input form-group__input--about validName" type="text" name="user-patronymic" placeholder="Отчество, если желаете" id="patronymic">
                       </li>
                     </ul>
                   </fieldset>
@@ -618,7 +622,7 @@
                         Тел
                       </label>
 
-                      <input class="form-group__input form-group__input--contacts" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"  id="number">
+                      <input class="form-group__input form-group__input--contacts validPhone" type="tel" name="user-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"  id="number">
 
                       <svg class="form-group__icon" width="25" height="24">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -631,7 +635,7 @@
                         E-mail
                       </label>
 
-                      <input class="form-group__input form-group__input--contacts" type="email" name="user-mail" placeholder="Ваш Email*"  id="mail">
+                      <input class="form-group__input form-group__input--contacts validMail" type="email" name="user-mail" placeholder="Ваш Email*"  id="mail">
 
                       <svg class="form-group__icon form-group__icon--mail" width="32" height="32">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>

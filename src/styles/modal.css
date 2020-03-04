@@ -25,12 +25,28 @@
 	margin: 50px  auto ;
 	padding: 20px;
 }
+.modal-container {
+	position: relative;
+}
+.close-icon {
+	width: 20px;
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+}
+.close-icon:hover{
+	opacity: 0.5;
+}
 
 
 .red {
-	border: 1px solid red;
+	border-bottom: 2px solid red;
+	background-color: #ff6969;
 }
 
 .green {
-	border: 1px solid green;
+	border-bottom: 2px solid green;
+	background-color: #7fff7f4f;
 }
