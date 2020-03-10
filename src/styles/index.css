@@ -2573,11 +2573,54 @@
 }
 
 .leave-review__title {
-  margin: 4px 0 5px;
+  margin: 4px 0 25px;
   font-size: 36px;
   line-height: 40px;
 }
 
+.review__input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  }
+
+.review__input input {
+  width:  70%;
+  height: 60px;
+  box-sizing: border-box;
+  padding:  5px 15px;
+
+  border: 1px solid #444444;
+  border-radius: 20px;
+  outline: none;
+}
+
+.review__btn {
+  display: inline-block;
+}
+
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review__item {
+  padding: 18px 15px;
+  font-weight: 400;
+  border: 1px solid #63d1bb;
+  border-radius: 20px;
+}
+.review__text {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.review__author {
+  margin: 0;
+  margin-top: 4px;
+  font-weight: bold;
+}
 @media (min-width: 768px) {
    .item-page__title {
      font-size: 43px;
